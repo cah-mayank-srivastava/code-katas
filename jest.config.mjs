@@ -43,16 +43,16 @@ export default {
   coverageProvider: "v8",
 
   // A list of reporter names that Jest uses when writing coverage reports
-  reporters: [
-    "default",
-    [
-      "./node_modules/jest-html-reporter",
-      {
-        pageTitle: "Program Management",
-        outputPath: "./test-report/index.html",
-      },
-    ],
-  ],
+  // reporters: [
+  //   "default",
+  //   [
+  //     "./node_modules/jest-html-reporter",
+  //     {
+  //       pageTitle: "Program Management",
+  //       outputPath: "./test-report/index.html",
+  //     },
+  //   ],
+  // ],
 
   // A list of paths to directories that Jest should use to search for files in
 
