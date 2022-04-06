@@ -7,7 +7,7 @@ describe("FizzBuzz", () => {
   afterEach(() => log.mockReset());
 
   describe("Stage 1", () => {
-    it.only("should iterate through numbers 1..100", () => {
+    it("should iterate through numbers 1..100", () => {
       const start = 1;
       const limit = 100;
       FizzBuzz(start, limit);
@@ -35,6 +35,14 @@ describe("FizzBuzz", () => {
       const limit = 15;
       FizzBuzz(start, limit);
       expect(log).toBeCalledTimes(1);
+      expect(log).toBeCalledWith("FizzBuzz");
+    });
+
+    it("should print FizzBuzz correctly for the given range", () => {
+      const start = 1;
+      const limit = 100;
+      FizzBuzz(start, limit);
+      expect(log).toBeCalledTimes(100);
       expect(log).toBeCalledWith("FizzBuzz");
     });
   });
