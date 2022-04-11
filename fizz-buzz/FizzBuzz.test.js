@@ -37,14 +37,6 @@ describe("FizzBuzz", () => {
       expect(log).toBeCalledTimes(1);
       expect(log).toBeCalledWith("FizzBuzz");
     });
-
-    it("should print FizzBuzz correctly for the given range", () => {
-      const start = 1;
-      const limit = 100;
-      FizzBuzz(start, limit);
-      expect(log).toBeCalledTimes(100);
-      expect(log).toBeCalledWith("FizzBuzz");
-    });
   });
 
   describe("Name of the group", () => {
